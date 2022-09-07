@@ -28,5 +28,28 @@ body {
     margin-left: 120px;
     margin-top: 20px;
     width: 75%;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
+}
+
+.company {
+    margin-bottom: 100px;
+}
+
+.media-icon a {
+    color: whitesmoke;
+    padding: 10px 10px;
+    font-size: 30px;
+    background-color: #228b224f;
+    border-radius: 50%;
+
+}
+
+.media-icon {
+    margin-top: 28px;
+}
+
+footer p {
+    margin: 0%;
+    font-size: 17px;
+
 }
