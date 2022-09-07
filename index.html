@@ -143,7 +143,7 @@
 
         <!-- course start -->
 
-        <section class="container mt-5 mb-5">
+        <section class="container  courses">
             <h1 class="text-center fs-1 fw-bold ">Discover Our Popular <br>
                 Courses</h1>
             <p class="text-center fs-4">It is a long established fact that a reader will be distracted by the readable
@@ -272,6 +272,8 @@
             </div>
         </section>
 
+        <!-------- form ------ -->
+
         <section class="container rounded d-flex justify-content-evenly align-items-center form ">
             <div>
                 <h1 class="fs-1 fw-bold">Ready to join?</h1>
@@ -279,11 +281,126 @@
                     readable content of a page when looking at its layout.
                 </p>
             </div>
+
             <div>
-                <button class="rounded  p-3 fw-bold fs-3 link">
-                    <a href="https://getbootstrap.com/docs/5.2/utilities/flex/">Register Now
-                    </a>
-                </button>
+                <button type="button" class="btn btn-warning fs-4 fw-bold p-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Registration Now</button>
+
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title fs-2 text-success" id="exampleModalLabel">REGISTRATION FORM</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" name="email" placeholder="Email" id="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="number" name="number" placeholder="Number" id="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Questions area  -->
+
+        <section class="container mb-5">
+
+            <h1 class="fs-1 fw-bold text-center mt-3">Frequently Asked Questions</h1>
+            <p class="fs-5  text-center mb-3">It is a long established fact that a reader will be distracted by the <br>
+                readable
+                content of a page when looking at its layout.</p>
+
+            <div class="accordion">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed fs-4 " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                What are the diffrence between flexbox and grid?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Grid is made for two-dimensional layout while Flexbox is for
+                                one.
+                                This means Flexbox can work on either row or columns at a time, but Grids can work on
+                                both.
+                                Flexbox, gives you more flexibility while working on either element (row or column).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed fs-4 " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                what are the difference between bootstrap and tailwind?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Bootstrap is much larger than Tailwind and requires multiple
+                                files
+                                to access its full functionality. Because of this, using Bootstrap means a significantly
+                                larger file size than Tailwind. Bootstrap also offers mobile-first, responsive
+                                components
+                                pre-styled to create flawless website pages quickly.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed fs-4 " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                What is css box model?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">The CSS box model is essentially a box that wraps around every
+                                HTML
+                                element. It consists of: margins, borders, padding, and the actual content. The image
+                                below
+                                illustrates the box model:</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed fs-4 " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                What is a semantic tag?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Semantic HTML or semantic markup is HTML that introduces meaning
+                                to the web page rather than just presentation. For example, a <p> tag indicates that the
+                                    enclosed text is a paragraph. This is both semantic and presentational because
+                                    people know what paragraphs are, and browsers know how to display them.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
